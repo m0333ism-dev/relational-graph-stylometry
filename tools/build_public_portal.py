@@ -96,7 +96,9 @@ def main(research,owner,repository):
     def omit_private_link(match):
         return '' if urlsplit(match.group(2)).path in private_routes else match.group(0)
     page=re.sub(r'<a\b([^>]*?)href="(/[^\"]*)"([^>]*)>.*?</a>',omit_private_link,page,flags=re.S)
+    page=re.sub(r'(?<=>)[\s·]+(?=<)',lambda match:' ' if '·' in match.group(0) else match.group(0),page)
     page=re.sub(r'<div class="links">[\s·]*</div>','',page)
+    page=page.replace('The paper contains 35 references. .','The paper contains 35 references.')
     def link_replacement(match):
         raw=match.group(1);parts=urlsplit(raw)
         assert parts.path in routes,'Unmapped local route: '+raw
@@ -109,6 +111,7 @@ def main(research,owner,repository):
     page=page.replace('<head>','<head><meta name="description" content="Explore collective stylometric feature interactions across Human and AI writing genres. Fixed-CSV graph-led exploratory research, formulas, controls and reproducible artifacts.">',1)
     page=page.replace('Save the observation with its exact feature set, scaling, document IDs and view settings. Notes are appended to your research journal.','Save a private browser note with its exact feature set, scaling, document IDs and view settings. Export your notes to retain a copy. The published research notebook remains unchanged.')
     page=page.replace('Save observation to research journal','Save observation in this browser')
+    page=page.replace('The published research notebook remains unchanged.','The original experiment notebook stays local.')
     marker='<button id="save"';assert marker in page
     page=page.replace('<p id="save-status"','<button type="button" id="export-notes">Export my notes</button><p id="save-status"',1)
     # Existing tables need separate padding and wrapping at project-site widths.
