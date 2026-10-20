@@ -1,6 +1,6 @@
 # Relational Graph Stylometry
 
-This portal accompanies Experiment 03: graph-led discovery of recurring
+This portal accompanies graph-led discovery of recurring
 stylometric feature configurations in Human and AI writing across genres.
 Its empirical input is the fixed 5,046-row, 132-feature CSV and graphs derived
 from that table. The study is exploratory; its genre exceptions and incomplete
