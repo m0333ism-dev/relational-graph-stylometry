@@ -24,7 +24,7 @@ def main(base_url,release,paths=None):
         assert set(paths)<=set(available)
         files=[available[name] for name in paths]
     with ThreadPoolExecutor(max_workers=6) as pool:checks=sum(pool.map(verify,files))
-    unavailable=['downloads/Graph_Led_Stylometry_Manuscript.pdf','downloads/Branch_Synthetic_Features.csv','downloads/Branch_Geometry_Parameters.zip','Research_System_Source.zip','reports/notebook.html']
+    unavailable=['downloads/Graph_Led_Stylometry_Manuscript.pdf','downloads/Branch_Synthetic_Features.csv','downloads/Branch_Geometry_Parameters.zip','Research_System_Source.zip','reports/notebook.html','AIJ_Manuscript.pdf','AIJ_Manuscript.docx','AIJ_Submission_Package.zip','downloads/AIJ_Manuscript.pdf','downloads/AIJ_Manuscript.docx']
     for relative in unavailable:
         try:urlopen(base_url+relative,timeout=30)
         except HTTPError as error:assert error.code==404,relative

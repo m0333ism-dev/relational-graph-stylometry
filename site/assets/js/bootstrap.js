@@ -3,7 +3,9 @@
   try{
     const nodes=[...document.querySelectorAll('script[type="application/json"][data-src]')];
     await Promise.all(nodes.map(async node=>{const response=await fetch(node.dataset.src);if(!response.ok)throw Error('Could not load '+node.dataset.src);node.textContent=await response.text();JSON.parse(node.textContent)}));
-    for(const name of ['assets/js/view-math.js','assets/js/atlas.js','assets/js/branch-panel.js']){
+    const scripts=['assets/js/view-math.js','assets/js/atlas.js','assets/js/branch-panel.js'];
+    if(document.getElementById('capture-study'))scripts.push('assets/js/capture-study.js');
+    for(const name of scripts){
       await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=name;script.onload=resolve;script.onerror=()=>reject(Error('Could not load '+name));document.body.append(script)});
     }
     document.getElementById('portal-loading').remove();

@@ -116,7 +116,7 @@ def main(research,owner,repository):
     page=page.replace('<p id="save-status"','<button type="button" id="export-notes">Export my notes</button><p id="save-status"',1)
     # Existing tables need separate padding and wrapping at project-site widths.
     page=page.replace('</head>','<style>#branch-study th,#branch-study td{padding:7px 9px;text-align:left;vertical-align:top}#branch-study th{white-space:normal}#branch-study table{width:100%;border-collapse:collapse}#branch-study tr:nth-child(even){background:#f5f8fa}#portal-loading{padding:12px 20px;background:#edf6fa;color:#17333f}#export-notes{margin-left:8px}</style></head>',1)
-    loading='<div id="portal-loading" role="status">Loading the fixed feature table and graph controls…</div><noscript>This portal needs JavaScript for interactive plots. The manuscript and downloadable research reports remain available through their links.</noscript>'
+    loading='<div id="portal-loading" role="status">Loading the fixed feature table and graph controls…</div><noscript>This portal needs JavaScript for interactive plots. Static graph sheets and on-page findings remain readable below.</noscript>'
     page=page.replace('<body>', '<body>'+loading,1)
     public_notes=[]
     page=page.replace('</body>','<script id="published-notes" type="application/json">'+js_json(public_notes)+'</script><script src="assets/js/bootstrap.js" defer></script></body>',1)
@@ -142,4 +142,9 @@ def main(research,owner,repository):
     (PROJECT/'verification').mkdir(exist_ok=True);write_json(PROJECT/'verification/Build_Record.json',report);print(json.dumps(report))
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--research-root',type=Path,required=True);parser.add_argument('--owner',required=True);parser.add_argument('--repository',default='relational-graph-stylometry');args=parser.parse_args();main(args.research_root,args.owner,args.repository)
+    parser=argparse.ArgumentParser();parser.add_argument('--research-root',type=Path,required=True);parser.add_argument('--owner',required=True);parser.add_argument('--repository',default='relational-graph-stylometry');parser.add_argument('--comparison-study',type=Path);parser.add_argument('--csv',type=Path);args=parser.parse_args()
+    if args.comparison_study and not args.csv:parser.error('--comparison-study requires the pinned --csv')
+    main(args.research_root,args.owner,args.repository)
+    if args.comparison_study:
+        from build_capture_update import main as add_comparisons
+        add_comparisons(args.comparison_study,args.csv)

@@ -26,7 +26,7 @@ def main(research):
     for p in site.rglob('*'):
         if not p.is_file():continue
         file_count+=1;total+=p.stat().st_size;largest=max(largest,p.stat().st_size)
-        assert p.suffix.lower() not in {'.pdf','.csv','.zip','.md','.jsonl'},p
+        assert p.suffix.lower() not in {'.pdf','.docx','.csv','.zip','.md','.jsonl'},p
         assert p.stat().st_size<100*1024**2,p
         if p.suffix!='.html':continue
         parser=Links();parser.feed(p.read_text(encoding='utf-8'))

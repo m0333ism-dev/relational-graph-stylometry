@@ -11,6 +11,14 @@ views, reconstructed responses, preserved-block structural controls and
 on-page results. The browser receives the numeric payloads required to draw
 and inspect these interactive graphs.
 
+The 22 October 2026 update adds saved comparisons for the five-feature
+sentence envelope (R04) and eight-feature modifier/depth configuration (R06)
+in all six genres, 18 inspected comparison sheets, five overview figures and
+47 external references. Its results keep log-response energy, graph-coordinate
+energy and branch occupancy separate. Reconstructions remain partial, and
+papers remain a small descriptive cohort. The graph-coordinate check was an
+adaptive follow-up with fitted responses frozen.
+
 ## Research records
 
 The displayed original feature values and graph images retain the identities
@@ -46,6 +54,19 @@ Open `http://127.0.0.1:8875/`.
 python tools/build_public_portal.py --research-root "PATH_TO_COMPLETED_RESEARCH" --owner YOUR_GITHUB_LOGIN
 python tools/verify_public_portal.py
 ```
+
+To add the later saved comparisons to an existing portal build:
+
+```text
+python tools/build_capture_update.py --study-root "PATH_TO_SAVED_COMPARISON_STUDY" --csv "PATH_TO_PINNED_FEATURE_CSV"
+python tools/verify_capture_update.py --study-root "PATH_TO_SAVED_COMPARISON_STUDY" --csv "PATH_TO_PINNED_FEATURE_CSV"
+python tools/verify_public_portal.py
+```
+
+For a complete rebuild, `build_public_portal.py` also accepts
+`--comparison-study` and `--csv`. The comparison builder reads saved numerical
+results, membership records and graph assets. It does not execute the research
+scripts, refit a model, generate new response draws or read document text.
 
 The builder copies only portal assets and displayed scientific payloads.
 It does not inspect source text documents or rerun statistical analysis.

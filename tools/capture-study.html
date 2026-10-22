@@ -1,0 +1,64 @@
+<section class="record capture-study" id="capture-study" aria-labelledby="capture-title">
+  <p class="eyebrow">22 OCTOBER 2026 · SAVED GRAPH COMPARISONS · FIXED CSV</p>
+  <h2 id="capture-title">From recurring interactions to partial mathematical capture</h2>
+  <p>I began with the collective graph configurations, then designed coordinates and conditional response models around them. The target is how several features move together across genres. A better score is one check; the reconstructed configuration must also be inspected.</p>
+  <div class="capture-findings">
+    <div><strong>Recurring envelope geometry</strong><p>The occupied AI sentence-envelope neighbourhoods are narrower in email, reviews and articles across the recorded matching, size and unique-tuple controls. Abstracts reverse under tighter or size controls; legal does not follow the same contrast.</p></div>
+    <div><strong>Several members, one configuration</strong><p>R04 links mean, median, variability, interquartile range and maximum sentence length. R06 links two modifier bands and sentence length to average, median and maximum dependency depth.</p></div>
+    <div><strong>Capture remains incomplete</strong><p>For R06, forest responses beat the frozen cubic in log-response energy in 10/10 primary cells, graph-coordinate energy in 7/10, and branch occupancy in 6/10. These are different checks on the same 10 genre–class cells.</p></div>
+  </div>
+  <p class="capture-callout">Five primary genres contribute ten Human/AI cells. Papers contain only 23 rows per class and remain descriptive. These counts are directional comparisons, not classification accuracy or significance tests.</p>
+
+  <h3>Inspect the original configuration and its reconstruction</h3>
+  <div class="capture-controls">
+    <label for="capture-family">Interaction family<select id="capture-family"><option value="R04">R04 · five-feature sentence envelope</option><option value="R06">R06 · eight-feature modifier/depth</option></select></label>
+    <label for="capture-genre">Genre<select id="capture-genre"><option value="email">Email</option><option value="review" selected>Reviews</option><option value="legal">Legal</option><option value="abstracts">Abstracts</option><option value="articles">Articles</option><option value="papers">Papers · descriptive</option></select></label>
+    <label for="capture-model">Saved response model<select id="capture-model"><option value="forest_leaf16">Forest · leaf 16</option><option value="kernel_k32">Local kernel · k = 32</option></select></label>
+    <label for="capture-view">Graph coordinates<select id="capture-view"><option value="shape">Envelope shape</option></select></label>
+  </div>
+  <p id="capture-description"></p>
+  <p id="capture-view-note" class="capture-callout"></p>
+  <div id="capture-status" role="status" aria-live="polite">Loading saved graph comparisons…</div>
+  <div class="capture-plots">
+    <section><h4>Human · observed query responses</h4><div id="capture-human-original" class="capture-plot"></div></section>
+    <section><h4>Human · <span class="capture-model-name">saved reconstruction</span></h4><div id="capture-human-model" class="capture-plot"></div></section>
+    <section><h4>AI · observed query responses</h4><div id="capture-ai-original" class="capture-plot"></div></section>
+    <section><h4>AI · <span class="capture-model-name">saved reconstruction</span></h4><div id="capture-ai-model" class="capture-plot"></div></section>
+  </div>
+  <p class="capture-small">Grey points show the full eligible original context within each class and genre, with one representative per complete 132-feature vector. Coloured points show the selected queries. Every panel uses the original sheet’s common axes and colour range, including distant points. Reconstructions use the saved fixed-seed single draw per query; the numerical scores below use the full probability law. Hover shows CSV row and document identifiers. The CSV row index begins at zero.</p>
+  <p id="capture-observation" class="capture-observation"></p>
+  <details class="capture-details"><summary>View the complete inspected sheet for this selection</summary><figure><img id="capture-sheet-image" loading="lazy" decoding="async" alt="Complete scientific comparison sheet"><figcaption id="capture-sheet-caption"></figcaption></figure></details>
+
+  <h3>All genres, with the counterexamples retained</h3>
+  <p id="capture-table-note"></p>
+  <div class="capture-table-scroll" tabindex="0"><table id="capture-results"><caption id="capture-results-caption">Saved conditional response results</caption><thead><tr><th scope="col">Genre / class</th><th scope="col">Queries<br>response / graph</th><th scope="col">Log-response energy<br>model / prior</th><th scope="col">Graph energy<br>model / prior</th><th scope="col">Branch TV<br>model / prior</th><th scope="col">Unseen-branch<br>TV floor δ</th></tr></thead><tbody id="capture-results-body"></tbody></table></div>
+  <p class="capture-small">Lower losses are better within the same cell, coordinate definition and scoring cohort. Energy measures the conditional response distribution; graph energy measures the recorded interaction coordinates. Branch TV compares aggregate occupied branch mass. R04 branches are maximum-length levels; R06 branches are joint median/maximum-depth levels. Pointwise Brier and the variogram check different properties again. The graph-colour displays are illustrative, not occupancy tests.</p>
+
+  <details class="capture-details"><summary>Why these configurations were pursued: earlier cross-genre controls</summary>
+    <p>I retained the graph observations before testing more flexible capture. The width contrasts below refer to the earlier recorded cohorts, not the later benchmark queries. Negative values mean narrower occupied AI response neighbourhoods. Only reviews have consistently negative excess alignment under the recorded marginal-preserved controls; this limits a general dependence claim.</p>
+    {{EARLIER_WIDTH_TABLE}}
+    <p>The earlier modifier concentration contrast recurs in four primary genres with an email reversal. The earlier four-entropy conditional coordinate has the strongest five-primary-genre result in that discovery round. Their graphs and exceptions remain in the <a href="#branch-study">earlier discovery sections</a>.</p>
+  </details>
+  <details class="capture-details"><summary>How I defined the coordinates and carried out this comparison</summary>
+    <p><strong>R04:</strong> let m be mean sentence length and σ = m × CV. The display uses x = log(1 + IQR/σ), y = log(1 + (maximum − m)/σ), with colour asinh((median − m)/σ). Mean, median and CV are query context; IQR and maximum are the joint response. Colour is fixed by that context. Zero-CV rows have undefined shape coordinates and are excluded explicitly. These transforms use the stored CSV measurements.</p>
+    <p><strong>R06:</strong> each modifier band is represented by its radius and angle: r = hypot(ratio, dependency ratio), θ = atan2(dependency ratio, ratio). The anchors are log(1 + r/.05), θ for each band, and log mean sentence length. The response is the joint average/median/maximum depth triple. The depth plot shows median versus maximum depth, coloured by average depth. The graph-score coordinates are log median, log(average/median), and log(maximum/√(average × median)). The anchor plot holds point positions fixed and compares response colours.</p>
+    <p><strong>Held genre and vector groups:</strong> I reused the saved diagnostic query cohort and excluded its complete 132-feature vector groups globally. For each primary genre, I also excluded the whole genre and every complete-vector group occurring in it. Training uses eligible primary genres, one representative per class–genre vector group, shared training median/IQR scaling across classes and a genre-balanced empirical response prior. Papers are descriptive queries against eligible primary training data. Genre is not a predictor.</p>
+    <p><strong>Response models:</strong> the kernel retains the nearest 32 anchors with Gaussian weights and a bandwidth floor; the forest uses 128 trees, minimum leaf size 16 and depth limit 12. Both weight observed whole response tuples. R04 applies necessary bounded-length feasibility guards and abstains if no eligible tuple remains. R06 also compares a frozen full cubic basis with 56 columns. No authorship classifier is fitted.</p>
+    <p><strong>Chronology:</strong> I first froze the conditional benchmark, then inspected all 18 sheets. I added graph-coordinate scoring afterwards, keeping all fitted responses fixed. This is an adaptive exploratory follow-up on the same CSV, not independent confirmation. Hosting reuses saved responses and scores; it does not refit or resample them.</p>
+    <p><strong>Cohort accounting:</strong> R04 starts with 998 queries; one legal AI query has no compatible response tuple, leaving 997 response scores. Four further zero-CV queries are excluded from graph scoring, leaving 993. R06 has 954 queries for both score spaces. R06 excludes rows with a zero modifier-band radius.</p>
+  </details>
+  <details class="capture-details"><summary>Support limits, the product control and what remains unresolved</summary>
+    <p>If δ is the query mass on branches absent from global eligible training support, every normalized law restricted to that support has TV ≥ δ and Brier ≥ δ(1 + 1/B), where B is the number of training branches. Model restrictions can raise these floors. TV − δ is bookkeeping, not a causal decomposition or an achievable optimum.</p>
+    <p>Human review depth has δ = 0.1429 and forest TV = 0.3991. AI review depth has δ = 0 and TV = 0.2713. AI review envelope has δ = 0 and TV = 0.5776. Missing support explains only part of the occupancy failure. Legal envelope TV worsens relative to the prior for both classes despite lower energy.</p>
+    <p>The R06 product control preserves each forest response marginal while removing their joint dependence. It can create new median/maximum combinations and incompatible depth ordering, so the whole-tuple support floor does not apply to it. The joint forest has lower energy in 7/10 cells, lower variogram loss in 7/10 with different exceptions, and lower TV in 4/10. Product energy is Monte Carlo estimated; its SE measures simulation precision only. Graph energy was not computed for this control.</p>
+    <p>AI abstracts provide a direct counterexample to equating score improvement with structural capture: forest log-response energy is 0.5674 versus cubic 0.5896, while graph energy is 0.9143 versus 0.8175 and TV is 0.5437 versus 0.4970. Human email and AI articles also reverse the forest/cubic graph-energy comparison.</p>
+    <p>The study establishes finite, recurring configurations and partial capture with genre exceptions. It does not establish universal separation, irreducible higher-order interactions, causation, individual authorship detection or independent-corpus confirmation.</p>
+  </details>
+  <details class="capture-details"><summary>All fixed neighbourhood and leaf settings</summary>{{SENSITIVITY_TABLE}}</details>
+  <details class="capture-details"><summary>Five overview figures</summary>{{SUMMARY_FIGURES}}</details>
+  <details class="capture-details" id="capture-references"><summary>47 external references and the recorded access levels</summary>
+    <p>This is targeted literature context, not a systematic review. The access record distinguishes metadata, abstracts and accessible text. The companion manuscripts and research downloads remain local.</p>
+    <ol class="capture-references">{{REFERENCES}}</ol>
+  </details>
+  <p class="capture-provenance">Empirical source: fixed 5,046-row, 132-feature CSV and derived graphs. <a href="hosting-manifest.json">Hosting manifest and content hashes</a>. The displayed data, graph sheets and external reference links are public; manuscript and research downloads are excluded.</p>
+</section>
