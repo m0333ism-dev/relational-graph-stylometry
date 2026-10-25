@@ -1,15 +1,15 @@
 {
   "schema_version": "exp03.github_pages_release.v1",
   "built_at_utc": "2026-10-20T09:14:30.496619+00:00",
-  "title": "Experiment 03 — Relational Graph Stylometry",
+  "title": "Recurring feature interaction patterns across genres in human and AI writing",
   "author": "Muhammad Ismail",
-  "research_status": "FIXED_CSV_GRAPH_LED_EXPLORATORY_RESEARCH_COMPLETE",
+  "research_status": "QUALIFIED_RECURRING_COMPONENTS_WITH_GENRE_EXCEPTIONS",
   "research_build_sha256": "e2aa85a978408292b7c36ce3f6cf7c62e04ed5007999413b67fdf1dfb135f98e",
   "source_csv_sha256": "5068c83649471c0ac2daff34841c5ab6622eb13c49547875b750a95c745a2ff4",
   "rows": 5046,
   "features": 132,
   "research_data": "Fixed feature CSV and derived graphs only",
-  "publication_scope": "EXPLORATORY_FIXED_CSV_STUDY",
+  "publication_scope": "ORIGINAL_EXPLORATORY_AND_RAID_WITHIN_CONFIGURATION_FROZEN_COMPONENTS",
   "public_scope": "INTERACTIVE_PORTAL_ONLY_NO_RESEARCH_DOWNLOADS",
   "research_refitted_for_hosting": false,
   "graph_png_assets": 179,
@@ -260,5 +260,184 @@
       "assets/evidence/ee42f12fad5ddb4b0bd3e924ce871d736f0d9de28fbd0a973bd213539f90141f.png": "ee42f12fad5ddb4b0bd3e924ce871d736f0d9de28fbd0a973bd213539f90141f",
       "assets/evidence/f090e819fee0e594aaf5c650062d084bae5d443af4cb2a4f4cf9d11a082b2f3a.png": "f090e819fee0e594aaf5c650062d084bae5d443af4cb2a4f4cf9d11a082b2f3a"
     }
+  },
+  "updated_at_utc": "2026-10-25T15:01:56.521379+00:00",
+  "raid": {
+    "path": "raid/",
+    "features": 132,
+    "genres": 8,
+    "cohort_rows": {
+      "discovery": 1600,
+      "structural": 2398,
+      "final": 2390
+    },
+    "final_source_pairs": 1195,
+    "final_features_sha256": "c7b1c1478f4cb0aab6cde7088f0549559694ddf6077690a00f8e486fd451e76b",
+    "final_results_sha256": "7eb7c89e9b38c2672d483e295920c6a8ad9412d7ed395073b57ff2577720074c",
+    "parameters_sha256": "a6c80a03b37e57dfca51d22e4803917ef7e1a12d4c2a3a235ce801fb23ac1703",
+    "cohort_numeric_payload_sha256": {
+      "discovery": "4ca82a378f96e66e61228799a6e3fae8073795ac1f69e9bb9200e10e86f78350",
+      "structural": "2e894f552c6e1aaa2e397abb02868f9ac1ef53bc7719c739c59d5be905e8fab1",
+      "final": "2c668e3e5f600eca8b5e38070c7750b9923ebab06f40b16d60bbeb16bdb9f368"
+    },
+    "files_sha256": {
+      "data/discovery.json": "4ca82a378f96e66e61228799a6e3fae8073795ac1f69e9bb9200e10e86f78350",
+      "data/final.json": "2c668e3e5f600eca8b5e38070c7750b9923ebab06f40b16d60bbeb16bdb9f368",
+      "data/structural.json": "2e894f552c6e1aaa2e397abb02868f9ac1ef53bc7719c739c59d5be905e8fab1",
+      "explorer.js": "0f7863032f362337a0dd8924376a8fba37d1a736359efca122155b762f8ec519",
+      "figures/Frozen_Components.png": "8aa55c9e4e96d2a9cb07d8f7693cd0aaaeb8a1cdf26f40e1b29874aab19c6497",
+      "figures/Supplement_01_C04.png": "310cbc451f30eae1c01290f488ebf0618bc409eb3bebb46de7986882f81c2be9",
+      "figures/Supplement_02_C04.png": "d2987b199cc9713bd293ca8dbe65d94bf65df6993b5d5d0e2854d37a5efa85c1",
+      "figures/Supplement_03_C04.png": "e9ebb063cd22ec02b18dcc6526a22e61582c0e09e043a556af0acaeed684b549",
+      "figures/Supplement_04_C04.png": "46ceb22b008742d88768b7317cb231a8ab59e093be49d19397801ca72b52914f",
+      "figures/Supplement_05_B06.png": "4df00daaca12f6e2208b98a2678ca65e026e4de00fd954231b3528bc2f9cef86",
+      "figures/Supplement_06_B06.png": "35a12b912dfb83304d94c1ab06244cfc0ecca70e7c529dbf28b5cb736123e7dd",
+      "figures/Supplement_07_B06.png": "bf3e9508fb572e5b25c3aacf34990ab2222e89454a0813e3c01911ac60f11b64",
+      "figures/Supplement_08_B06.png": "25de79cc100022b3102d9587dd5b027476ebb01c70d67ab9d1439c17ea842275",
+      "figures/Supplement_09_S01.png": "85f16215f19dc0dbc75cd1671863dda7e57c364de9be80763c2a8db437d0192d",
+      "figures/Supplement_10_S01.png": "f73b3969188054672bba00f8e8abc77a63a3fcca34864640cb4556a8cab26102",
+      "figures/Supplement_11_S01.png": "997c4ab18c26b56c3ee554ed0bcb4e4c7b3c84cb742a925da70d4d028e112d82",
+      "figures/Supplement_12_S01.png": "5d04faa89f0b73f03c68f6c061478a963c50f723f273c28c03236292e4f329de",
+      "index.html": "cba3bf72c283dbbde0623f28d981c4b6acd3ebbf794d34e6af2797372c1b94ca",
+      "metadata.json": "f2e8475e3c635cf4dbb6647b855360f8538da0c63f9fd39385111fea1c637dc0"
+    },
+    "all_genre_atlas": [
+      {
+        "number": 1,
+        "family": "C04",
+        "genres": [
+          "abstracts",
+          "books"
+        ],
+        "path": "figures/Supplement_01_C04.png",
+        "sha256": "310cbc451f30eae1c01290f488ebf0618bc409eb3bebb46de7986882f81c2be9",
+        "caption": "Figure S1. Mean and median sentence length supply the axes; sentence-length IQR supplies colour. All three coordinates use the common discovery-fitted asinh transform. Every eligible final document is retained. Axes and colours, where applicable, share their full range across all eight genres and both classes. No final response curve was fitted. Each panel contains 150 documents except poetry with 145."
+      },
+      {
+        "number": 2,
+        "family": "C04",
+        "genres": [
+          "news",
+          "poetry"
+        ],
+        "path": "figures/Supplement_02_C04.png",
+        "sha256": "d2987b199cc9713bd293ca8dbe65d94bf65df6993b5d5d0e2854d37a5efa85c1",
+        "caption": "Figure S2. Mean and median sentence length supply the axes; sentence-length IQR supplies colour. All three coordinates use the common discovery-fitted asinh transform. Every eligible final document is retained. Axes and colours, where applicable, share their full range across all eight genres and both classes. No final response curve was fitted. Each panel contains 150 documents except poetry with 145."
+      },
+      {
+        "number": 3,
+        "family": "C04",
+        "genres": [
+          "recipes",
+          "reddit"
+        ],
+        "path": "figures/Supplement_03_C04.png",
+        "sha256": "e9ebb063cd22ec02b18dcc6526a22e61582c0e09e043a556af0acaeed684b549",
+        "caption": "Figure S3. Mean and median sentence length supply the axes; sentence-length IQR supplies colour. All three coordinates use the common discovery-fitted asinh transform. Every eligible final document is retained. Axes and colours, where applicable, share their full range across all eight genres and both classes. No final response curve was fitted. Each panel contains 150 documents except poetry with 145."
+      },
+      {
+        "number": 4,
+        "family": "C04",
+        "genres": [
+          "reviews",
+          "wiki"
+        ],
+        "path": "figures/Supplement_04_C04.png",
+        "sha256": "46ceb22b008742d88768b7317cb231a8ab59e093be49d19397801ca72b52914f",
+        "caption": "Figure S4. Mean and median sentence length supply the axes; sentence-length IQR supplies colour. All three coordinates use the common discovery-fitted asinh transform. Every eligible final document is retained. Axes and colours, where applicable, share their full range across all eight genres and both classes. No final response curve was fitted. Each panel contains 150 documents except poetry with 145."
+      },
+      {
+        "number": 5,
+        "family": "B06",
+        "genres": [
+          "abstracts",
+          "books"
+        ],
+        "path": "figures/Supplement_05_B06.png",
+        "sha256": "4df00daaca12f6e2208b98a2678ca65e026e4de00fd954231b3528bc2f9cef86",
+        "caption": "Figure S5. Subordinate and complement-clause ratios supply the axes; average dependency depth supplies colour. All three coordinates use the common discovery-fitted asinh transform. Shared clause counts qualify interpretation. Every eligible final document is retained. Axes and colours, where applicable, share their full range across all eight genres and both classes. No final response curve was fitted. Each panel contains 150 documents except poetry with 145."
+      },
+      {
+        "number": 6,
+        "family": "B06",
+        "genres": [
+          "news",
+          "poetry"
+        ],
+        "path": "figures/Supplement_06_B06.png",
+        "sha256": "35a12b912dfb83304d94c1ab06244cfc0ecca70e7c529dbf28b5cb736123e7dd",
+        "caption": "Figure S6. Subordinate and complement-clause ratios supply the axes; average dependency depth supplies colour. All three coordinates use the common discovery-fitted asinh transform. Shared clause counts qualify interpretation. Every eligible final document is retained. Axes and colours, where applicable, share their full range across all eight genres and both classes. No final response curve was fitted. Each panel contains 150 documents except poetry with 145."
+      },
+      {
+        "number": 7,
+        "family": "B06",
+        "genres": [
+          "recipes",
+          "reddit"
+        ],
+        "path": "figures/Supplement_07_B06.png",
+        "sha256": "bf3e9508fb572e5b25c3aacf34990ab2222e89454a0813e3c01911ac60f11b64",
+        "caption": "Figure S7. Subordinate and complement-clause ratios supply the axes; average dependency depth supplies colour. All three coordinates use the common discovery-fitted asinh transform. Shared clause counts qualify interpretation. Every eligible final document is retained. Axes and colours, where applicable, share their full range across all eight genres and both classes. No final response curve was fitted. Each panel contains 150 documents except poetry with 145."
+      },
+      {
+        "number": 8,
+        "family": "B06",
+        "genres": [
+          "reviews",
+          "wiki"
+        ],
+        "path": "figures/Supplement_08_B06.png",
+        "sha256": "25de79cc100022b3102d9587dd5b027476ebb01c70d67ab9d1439c17ea842275",
+        "caption": "Figure S8. Subordinate and complement-clause ratios supply the axes; average dependency depth supplies colour. All three coordinates use the common discovery-fitted asinh transform. Shared clause counts qualify interpretation. Every eligible final document is retained. Axes and colours, where applicable, share their full range across all eight genres and both classes. No final response curve was fitted. Each panel contains 150 documents except poetry with 145."
+      },
+      {
+        "number": 9,
+        "family": "S01",
+        "genres": [
+          "abstracts",
+          "books"
+        ],
+        "path": "figures/Supplement_09_S01.png",
+        "sha256": "85f16215f19dc0dbc75cd1671863dda7e57c364de9be80763c2a8db437d0192d",
+        "caption": "Figure S9. Raw adverb and advmod proportions supply the axes. The dashed line is the frozen pooled discovery spine; vertical lines mark the frozen common-position anchors. The endpoint uses local residual widths with recorded support, rather than the full displayed band. Every eligible final document is retained. Axes and colours, where applicable, share their full range across all eight genres and both classes. No final response curve was fitted. Each panel contains 150 documents except poetry with 145."
+      },
+      {
+        "number": 10,
+        "family": "S01",
+        "genres": [
+          "news",
+          "poetry"
+        ],
+        "path": "figures/Supplement_10_S01.png",
+        "sha256": "f73b3969188054672bba00f8e8abc77a63a3fcca34864640cb4556a8cab26102",
+        "caption": "Figure S10. Raw adverb and advmod proportions supply the axes. The dashed line is the frozen pooled discovery spine; vertical lines mark the frozen common-position anchors. The endpoint uses local residual widths with recorded support, rather than the full displayed band. Every eligible final document is retained. Axes and colours, where applicable, share their full range across all eight genres and both classes. No final response curve was fitted. Each panel contains 150 documents except poetry with 145."
+      },
+      {
+        "number": 11,
+        "family": "S01",
+        "genres": [
+          "recipes",
+          "reddit"
+        ],
+        "path": "figures/Supplement_11_S01.png",
+        "sha256": "997c4ab18c26b56c3ee554ed0bcb4e4c7b3c84cb742a925da70d4d028e112d82",
+        "caption": "Figure S11. Raw adverb and advmod proportions supply the axes. The dashed line is the frozen pooled discovery spine; vertical lines mark the frozen common-position anchors. The endpoint uses local residual widths with recorded support, rather than the full displayed band. Every eligible final document is retained. Axes and colours, where applicable, share their full range across all eight genres and both classes. No final response curve was fitted. Each panel contains 150 documents except poetry with 145."
+      },
+      {
+        "number": 12,
+        "family": "S01",
+        "genres": [
+          "reviews",
+          "wiki"
+        ],
+        "path": "figures/Supplement_12_S01.png",
+        "sha256": "5d04faa89f0b73f03c68f6c061478a963c50f723f273c28c03236292e4f329de",
+        "caption": "Figure S12. Raw adverb and advmod proportions supply the axes. The dashed line is the frozen pooled discovery spine; vertical lines mark the frozen common-position anchors. The endpoint uses local residual widths with recorded support, rather than the full displayed band. Every eligible final document is retained. Axes and colours, where applicable, share their full range across all eight genres and both classes. No final response curve was fitted. Each panel contains 150 documents except poetry with 145."
+      }
+    ],
+    "new_fits": false,
+    "new_inference": false,
+    "generation_prose_included": false,
+    "research_downloads": false
   }
 }

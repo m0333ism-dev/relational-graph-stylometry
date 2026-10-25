@@ -38,7 +38,7 @@ def main(research):
             target=(p.parent/unquote(value.path)).resolve() if value.path else p.resolve()
             assert target.is_relative_to(site.resolve()) and target.exists(),(p,link)
             link_count+=1
-        if p.name=='index.html':
+        if p==site/'index.html':
             for required in ['export-notes','save','portal-loading','branch-study','published-notes']:assert required in parser.ids,required
     assert total<1024**3
     for name,expected in manifest['download_sha256'].items():
